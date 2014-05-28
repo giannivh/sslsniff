@@ -6,4 +6,6 @@ sslsniff_SOURCES = Bridge.hpp SSLConnectionManager.cpp FingerprintManager.hpp Fi
 
 sslsniff_LDFLAGS = -lssl -lboost_filesystem -lpthread -lboost_thread -llog4cpp
 
+sslsniff_LDADD = -lboost_system -lssl -lboost_filesystem -lpthread -lboost_thread -llog4cpp
+
 EXTRA_DIST = certs/wildcard IPSCACLASEA1.crt leafcert.pem updates/Darwin_Universal-gcc3.xml updates/Linux_x86-gcc3.xml updates/WINNT_x86-msvc.xml
